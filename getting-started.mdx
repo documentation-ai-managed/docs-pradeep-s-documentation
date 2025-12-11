@@ -1,0 +1,122 @@
+---
+title: Getting Started with the Documentation
+description: A beginner's guide to exploring the personal documentation, including setup for any interactive elements if applicable.
+---
+
+## Overview
+
+Welcome to Pradeep S Documentation, your personal hub for notes, guides, and resources. You explore detailed topics on development, tools, and best practices through this intuitive site. Start here to navigate effectively, set up any required tools, and dive into your first content.
+
+<Columns cols={3}>
+  <Card title="Quick Navigation" icon="compass" href="#navigation">
+    Find sections easily with the sidebar and search.
+  </Card>
+  <Card title="Interactive Setup" icon="settings" href="#setup">
+    Configure your environment in under 2 minutes.
+  </Card>
+  <Card title="First Steps" icon="play" href="#first-steps">
+    Run your initial example right away.
+  </Card>
+</Columns>
+
+## Initial Setup
+
+Prepare your browser and tools for the best experience. No downloads required, but enable these features for interactivity.
+
+<Steps>
+  <Step title="Enable JavaScript" icon="code">
+    Ensure JavaScript runs in your browser. Check developer tools for errors.
+  </Step>
+  <Step title="Set Theme Preference" icon="sun">
+    Use the theme toggle in the header. Choose light or dark mode.
+
+    <Callout kind="tip">
+      Dark mode reduces eye strain during long reading sessions.
+    </Callout>
+  </Step>
+  <Step title="Configure Search" icon="search">
+    Install the browser extension if available, or use the built-in search bar.
+  </Step>
+</Steps>
+
+## Basic Navigation
+
+Access content across devices seamlessly. The sidebar provides persistent links, while search handles quick lookups.
+
+<Tabs>
+  <Tab title="Desktop" icon="monitor">
+    Use the left sidebar for sections. Hover for previews.
+
+    ```javascript
+    // Example: Bookmark a section
+    const bookmarkUrl = window.location.origin + '/docs/guides';
+    navigator.clipboard.writeText(bookmarkUrl);
+    ```
+  </Tab>
+  <Tab title="Mobile" icon="smartphone">
+    Tap the hamburger menu. Swipe for search.
+
+    ```javascript
+    // Simulate mobile search
+    const query = 'search term';
+    const searchUrl = `/search?q=${encodeURIComponent(query)}`;
+    ```
+  </Tab>
+</Tabs>
+
+## First Steps
+
+Test interactivity with a simple code example. Copy and run these snippets in your console to verify setup.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Fetch a sample resource
+  async function fetchDoc() {
+    const response = await fetch('/api/sample');
+    const data = await response.json();
+    console.log('Documentation loaded:', data.title);
+  }
+  fetchDoc();
+  ```
+  ```python
+  # Python equivalent using requests
+  import requests
+
+  response = requests.get('https://api.example.com/sample')
+  data = response.json()
+  print('Documentation loaded:', data['title'])
+  ```
+</CodeGroup>
+
+<Callout kind="info">
+  Replace `https://api.example.com` with your actual endpoint if using custom integrations.
+</Callout>
+
+## Advanced Tips
+
+<ExpandableGroup>
+  <Expandable title="Keyboard Shortcuts" default-open="true">
+    Speed up navigation:
+
+    | Action          | Shortcut     |
+    |-----------------|--------------|
+    | Search          | `/`          |
+    | Next Section    | `ArrowDown`  |
+    | Previous        | `ArrowUp`    |
+    | Theme Toggle    | `T`          |
+  </Expandable>
+  <Expandable title="Custom CSS">
+    Add styles via browser extensions.
+
+    ```css
+    :root {
+      --brand-color: #3B82F6;
+    }
+    .sidebar {
+      background: var(--brand-color);
+    }
+    ```
+  </Expandable>
+</ExpandableGroup>
+
+Explore sections like guides and references next. You now have the foundation to navigate and interact fully.

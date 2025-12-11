@@ -1,0 +1,169 @@
+---
+title: Changelog
+description: A record of updates and changes to the Pradeep S Documentation site over time.
+---
+
+## Overview
+
+You find the complete history of updates for Pradeep S Documentation here. This personal documentation site evolves with new features, performance improvements, and bug fixes. Review the latest releases below to see enhancements in MDX rendering, component support, and user experience. Each release includes categorized changes for quick scanning.
+
+<Callout kind="info">
+  Bookmark this page to stay informed. Subscribe to GitHub notifications for instant alerts on new versions.
+</Callout>
+
+## Recent Releases
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added `<Tabs>` and `<CodeGroup>` components for multi-platform examples
+- Introduced `<Columns>` layout for feature grids with responsive design
+- Enhanced `<Steps>` with custom icons from Lucide library
+
+## Improvements
+
+- Optimized Mermaid diagram rendering for faster load times
+- Improved accessibility with better alt text handling in `<Image>` components
+
+## Bug Fixes
+
+- Fixed parsing errors from unescaped `{` and `}` in prose text
+- Resolved nested code block issues using 4-backtick fences
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated `<Update>` component for streamlined changelog entries
+- Added `<ParamField>` and `<ResponseField>` for API documentation
+
+## Improvements
+
+- Brand color integration (`#3B82F6`) across all Callout and Card components
+- Better heading hierarchy enforcement starting from H2 only
+
+## Bug Fixes
+
+- Corrected JSX attribute syntax to enforce double quotes everywhere
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Launched core MDX components: `<Card>`, `<Callout>`, `<Steps>`
+- Full support for Mermaid code blocks (no JSX component needed)
+
+## Breaking Changes
+
+- Removed H1 headings from body content; use frontmatter title instead
+
+## Improvements
+
+- Strict parsing rules prevent common errors like raw `{variable}` in text
+
+</Update>
+
+## Future Plans
+
+Track upcoming enhancements that improve your documentation workflow.
+
+<Columns cols={3}>
+
+<Card title="v1.3.0" icon="zap" href="https://github.com/pradeeps/documentation/milestones">
+
+  Real-time preview editor.
+
+</Card>
+
+<Card title="Video Support" icon="play-circle" href="https://github.com/pradeeps/documentation/issues">
+
+  Embed `<Video>` components with YouTube and self-hosted options.
+
+</Card>
+
+<Card title="Advanced Search" icon="search" href="https://github.com/pradeeps/documentation/projects/1">
+
+  Full-text search across all docs.
+
+</Card>
+
+</Columns>
+
+## Stay Updated
+
+Follow these steps to monitor changes and contribute.
+
+<Steps>
+
+<Step title="Watch Repository" icon="github">
+
+  Visit the [GitHub repo](https://github.com/pradeeps/documentation) and click Watch > Custom > Releases.
+
+</Step>
+
+<Step title="Check Releases" icon="package">
+
+  Review tagged releases for detailed notes.
+
+  ```bash
+  gh release list --repo pradeeps/documentation
+  ```
+
+</Step>
+
+<Step title="Contribute" icon="code">
+
+  Fork the repo, create a feature branch, and submit a pull request.
+
+</Step>
+
+</Steps>
+
+<Tabs>
+
+<Tab title="GitHub" icon="github">
+
+  Enable notifications for Releases and Issues.
+
+</Tab>
+
+<Tab title="RSS" icon="rss">
+
+  Subscribe to the Atom feed: https://github.com/pradeeps/documentation/releases.atom
+
+</Tab>
+
+</Tabs>
+
+## Contribution Guidelines
+
+Submit issues or PRs to shape future releases. Use this example for feature requests:
+
+<CodeGroup tabs="Issue Template">
+
+```markdown
+**Feature Request**
+
+- Description: Add dark mode toggle
+- Use case: Better nighttime reading
+```
+
+````jsx
+<CodeGroup tabs="Before,After">
+```jsx
+// Before: Light only
+<div className="light-theme">...</div>
+```
+```jsx
+// After: Theme toggle
+<button onClick={toggleTheme}>Switch</button>
+```
+</CodeGroup>
+````
+
+</CodeGroup>

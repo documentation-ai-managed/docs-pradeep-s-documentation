@@ -1,0 +1,102 @@
+---
+title: Welcome to Pradeep S Documentation
+description: An overview of this personal documentation site, its purpose, and how to navigate it effectively.
+---
+
+## Overview
+
+Welcome to Pradeep S Documentation, your central hub for personal projects, technical notes, and development resources. You use this site to document experiments in web development, JavaScript frameworks, and backend services. Pradeep S, a full-stack developer passionate about React and Node.js, created it to organize knowledge and share insights.
+
+This personal documentation serves multiple purposes: track progress on side projects, reference code snippets, and explore new technologies. Navigate effortlessly with intuitive sections covering tutorials, API references, and deployment guides.
+
+<Callout kind="info">
+  Bookmark this page to quickly return and explore updates.
+</Callout>
+
+## Personal Background
+
+Pradeep S focuses on building scalable web applications. With experience in React, Next.js, and Express.js, you find detailed walkthroughs here for common challenges like authentication flows and performance optimization.
+
+<Expandable title="More About Pradeep S" default-open="false">
+
+Pradeep started coding in 2018, contributing to open-source and freelancing. Key projects include a real-time chat app using Socket.io and a task manager with PostgreSQL. This site evolves with new learnings.
+
+</Expandable>
+
+## Site Navigation
+
+Discover content through these key areas.
+
+<Columns cols={3}>
+  <Card title="Quick Start" icon="zap" href="/docs/quickstart">
+    Jump into basics with setup guides and first projects.
+  </Card>
+  <Card title="Tutorials" icon="book-open" href="/docs/tutorials">
+    Step-by-step guides on React hooks and API integrations.
+  </Card>
+  <Card title="API Reference" icon="code" href="/docs/api">
+    Detailed endpoints for personal backend services.
+  </Card>
+</Columns>
+
+## Getting Started
+
+Follow these steps to make the most of the documentation.
+
+<Steps>
+  <Step title="Browse Sections" icon="search">
+    Use the sidebar to find topics like JavaScript best practices or deployment checklists.
+  </Step>
+  <Step title="Copy Code Snippets" icon="copy">
+    Each example includes copy buttons for quick use in your editor.
+  </Step>
+  <Step title="Search Content" icon="zoom-in">
+    Press <kbd>Ctrl</kbd>+<kbd>K</kbd> (or <kbd>Cmd</kbd>+<kbd>K</kbd> on macOS) to search across all pages.
+  </Step>
+</Steps>
+
+## Explore by Topic
+
+Switch between content types based on your needs.
+
+<Tabs>
+  <Tab title="Frontend" icon="monitor">
+    Focus on UI/UX with React and Tailwind CSS examples.
+
+    <CodeGroup tabs="React,HTML">
+```jsx
+import React from 'react';
+
+function Greeting({ name }) {
+  return <h1>Hello, {name}!</h1>;
+}
+```
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Backend" icon="server">
+    Server-side logic with Node.js and Express.
+
+    ```javascript
+    const express = require('express');
+    const app = express();
+
+    app.get('/api/users', (req, res) => {
+      res.json({ users: [{ id: 1, name: 'Pradeep' }] });
+    });
+
+    app.listen(3000, () => console.log('Server running'));
+    ```
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+Start with the <Card title="Quick Start Guide" icon="rocket" href="/docs/quickstart" horizontal>linked guide</Card> to build your first project. Contribute feedback via GitHub issues if you spot improvements. This site updates regularly with new tutorials and code samples tailored for developers like you.
